@@ -5,7 +5,7 @@ import UIKit
 var str = "Hello, playground"
 print("Print this line yo")
 
-println("List \n1\tApple \n2\tBananas \n6\tOranges")
+println("\nList \n1\tApple \n2\tBananas \n6\tOranges")
 println("List \nBread \nMilk \nHoney")
 
 let year : Int = 2014
@@ -43,3 +43,35 @@ countries["CA"]
 countries["US"] = "United States"
 countries["US"] = "United States of America"
 let country = countries.removeValueForKey("CA")
+
+for item in todo {
+    println(item)
+}
+for number in 1...10 {
+    println("\(number) times 2 is \(number*2)")
+}
+for number in 1..<10 {
+    println("\(number) times 2 is \(number*2)")
+}
+for number in 1...10 {
+   println("\(number) * 7 = \(number*7)") 
+}
+
+var indexCount = 0
+while indexCount < todo.count {
+    println(todo[indexCount])
+    indexCount++
+}
+
+indexCount = 0
+do {
+    println(todo[indexCount])
+    indexCount++
+} while indexCount < todo.count
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+indexCount = 0
+while indexCount < numbers.count {
+    println(numbers[indexCount])
+    indexCount++
+}
